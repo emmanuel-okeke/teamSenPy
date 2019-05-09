@@ -20,10 +20,7 @@ gpio.setup(fan, gpio.OUT)
 
 os.system('modprobe w1-gpio')
 os.system('modprobe w1-therm')
-
-base_directory = '/sys/bus/w1/devices/'
-sensor_folder = glob.glob(base_directory+'28*')[0]
-sensor_file_name = sensor_folder + '/w1_slave'
+sensor_file_name = glob.glob('/sys/bus/w1/devices/'+'28*')[0] + '/w1_slave'
 
 def read_native_temp():
         sensor_file = open(sensor_file_name, 'r')
