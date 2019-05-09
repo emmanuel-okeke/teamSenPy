@@ -16,6 +16,11 @@ $ sudo apt-get update
 $ sudo apt-get install python-rpi.gpio python3-rpi.gpio
 ````
 
+### Circuit Diagram
+![Image of Circuit]
+(/circuit.png)
+
+
 ### Notes: 
 * Before running this code make sure you enable the one wire interface on your raspberry pi. 
 * The code is well commented so it should be pretty easy to follow.
