@@ -27,4 +27,9 @@ these can be found in the demo folder. The shorter video has the fan running wit
 * Before running this code make sure you enable the one wire interface on your raspberry pi. This link (https://www.raspberrypi-spy.co.uk/2018/02/enable-1-wire-interface-raspberry-pi/) will help.  
 * The code is well commented so it should be pretty easy to follow.
 
+### Have fun
+-teamSenPy
 
+Emmanuel Okeke - Snake Tamer
+Michael Normand - Wire Cutter
+Will Ramirez - People Talker
