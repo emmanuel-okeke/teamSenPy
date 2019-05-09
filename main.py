@@ -21,8 +21,8 @@ gpio.setup(fan, gpio.OUT)
 
 # collect the file address that the sensor dumps data into. 
 ## first load the w1-gpio and w1-therm kernel modules
-os.system('modprobe w1-gpio')
-os.system('modprobe w1-therm')
+os.system('sudo modprobe w1-gpio')
+os.system('sudo modprobe w1-therm')
 sensor_file_name = glob.glob('/sys/bus/w1/devices/'+'28*')[0] + '/w1_slave'
 
 # Goes to the sensor "file" to read the data dumped by the sensor 
@@ -60,8 +60,8 @@ def isithot(cutoff_temp_c, temp):
 
 #when program starts, ask if user would like a new temp.
 print("Do you want to override the default cutoff temp of 27C?")
-cutoff_temp_override = input("If so enter new temp or leave blank: ")
-if cutoff_temp_override and type(cutoff_temp_override) == int:
+cutoff_temp_override = input("If so enter new temp or enter 0: ")
+if type(cutoff_temp_override) == int and cutoff_temp_override > 0:
     cutoff_temp_c = cutoff_temp_override
 
 # first read the temp and then check if its above the cutoff
