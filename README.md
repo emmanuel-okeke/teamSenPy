@@ -17,8 +17,8 @@ $ sudo apt-get install python-rpi.gpio python3-rpi.gpio
 ````
 
 ### Circuit Diagram
-![Image of Circuit]
-(/circuit.png)
+! [Image of Circuit]
+(https://github.com/emmanuel-okeke/teamSenPy/blob/master/circuit.png)
 
 
 ### Notes: 
